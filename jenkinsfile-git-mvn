@@ -1,0 +1,18 @@
+pipeline{
+    agent any
+    environment{
+        PATH = "/usr/share/maven/bin:$PATH"
+    }
+    stages{
+        stage('git content'){
+            steps{
+                git credentialsId: 'Mallesh', url: 'https://github.com/MalleshMuppuri/Jenkins'            
+            }
+        }
+        stage('Maven Build'){
+            steps{
+                sh "mvn clean package"
+            }
+        }
+    }
+}
