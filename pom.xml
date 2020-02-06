@@ -9,7 +9,7 @@
 		<version>2.1.6.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.test.ssh</groupId>
+	
 	<artifactId>MCSODashboard</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
 	<name>MCSODashboard_V2</name>
