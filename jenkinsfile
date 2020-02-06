@@ -1,0 +1,11 @@
+pipeline{
+  agent any
+  stages{
+    stage('Git hub jenkinsfile'){
+      steps{
+      git credentialId: 'Mallesh',url: 'https://github.com/MalleshMuppuri/jenkins.git'
+      }
+    }
+    
+  }
+}
